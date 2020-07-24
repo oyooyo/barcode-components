@@ -52,8 +52,8 @@ or
 
 ## Usage examples
 
-- (Online QR-Code Generator)[https://oyooyo.github.io/barcode-components/examples/qrcode_generator.html]
-- (CheatSheet for configuring the H2WB 2D Barcode Scanner)[https://oyooyo.github.io/barcode-components/examples/h2wb_cheatsheet.html]
+- [Online QR-Code Generator](https://oyooyo.github.io/barcode-components/examples/qrcode_generator.html)
+- [CheatSheet for configuring the H2WB 2D Barcode Scanner](https://oyooyo.github.io/barcode-components/examples/h2wb_cheatsheet.html)
 
 ## Advanced topics
 
