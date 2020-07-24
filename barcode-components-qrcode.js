@@ -1327,7 +1327,7 @@ function create_dom_element(name_at_namespace, attributes, ...childs) {
 	for (let key in attributes) {
 		element.setAttribute(key, attributes[key]);
 	}
-	for (child of childs) {
+	for (let child of childs) {
 		element.appendChild(child);
 	}
 	return element;
