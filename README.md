@@ -65,10 +65,17 @@ some_barcode_element.setAttribute("data", "<new_data>");
 ```
 in Javascript, the barcode will automatically update/re-render.
 
+## ToDo
+
+- Add way to specify the QR-Code error correction level
+- Document undocumented configuration attributes
+- Add some more configuration attributes
+- Add more barcode types
+
 ## Technology and compatibility
 
 *barcode-components* uses [Custom Elements](https://en.wikipedia.org/wiki/Web_Components#Custom_Elements) and [Shadow DOM](https://en.wikipedia.org/wiki/Web_Components#Shadow_DOM) and [should work in more or less all recent webbrowsers](https://caniuse.com/#feat=custom-elementsv1).
 
 ## Credits
 
-The QR-Code encoder being used is a slightly modified version of Kazuhiko Arase's [QR-Code-Generator](https://github.com/kazuhikoarase/qrcode-generator). Basically, just the unnecessary image creation parts were removed.
+The QR-Code encoder being used is a slightly modified version of [Kazuhiko Arase](https://github.com/kazuhikoarase)'s [QR-Code-Generator](https://github.com/kazuhikoarase/qrcode-generator). Basically, just the unnecessary image creation parts were removed.
