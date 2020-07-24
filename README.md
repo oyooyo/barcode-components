@@ -20,15 +20,15 @@ The following barcode types are currently supported:
 
 Add...
 
-`<script src="https://oyooyo.github.io/barcode-components/barcode-components-qrcode.min.js" integrity="sha384-UdIDANN9wPxUwDIG4och2Zl1fJTTJKA1E5voYg/AzpP5VYgDRVM8pXbt0zptGRwl"></script>` _(for QR-Code)_
+`<script src="https://oyooyo.github.io/barcode-components/barcode-components-qrcode.js"></script>` _(for QR-Code)_
 
 or
 
-`<script src="https://oyooyo.github.io/barcode-components/barcode-components-code128b.min.js" integrity="sha384-w4vj6Msjq+tZa8QpQhz+N8hkGVKgv1aqsry5+YMXwVI1omIDpueJM17x4tgYidjn"></script>` _(for Code 128B)_
+`<script src="https://oyooyo.github.io/barcode-components/barcode-components-code128b.js"></script>` _(for Code 128B)_
 
 or
 
-`<script src="https://oyooyo.github.io/barcode-components/barcode-components-code39.min.js" integrity="sha384-ztITJusve9zxl/+AaEjCwJFwrp0AdFj62L4cmtG5jSPxM6qToppgUw6Di9dNdO/m"></script>` _(for Code 39)_
+`<script src="https://oyooyo.github.io/barcode-components/barcode-components-code39.js"></script>` _(for Code 39)_
 
 ...to the script section of your HTML/DOM.
 
