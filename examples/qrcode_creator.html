@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Online QR-Code Creator</title>
+		<style>
+			body {
+				background-color: #C0E0FF;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Online QR-Code Creator</h4>
+
+		<p>Data: <input id="data_input" type="text" value="https://github.com/oyooyo/barcode-elements" size="100" /></p>
+		<p>Scale: <input id="scale_input" type="number" value="4" /></p>
+
+		<qr-code id="qr_code"></qr-code>
+
+		<p><small><em>This page uses the <a href="https://github.com/oyooyo/barcode-components">barcode-components</a> web components for displaying barcodes.</em></small></p>
+
+		<script src="../barcode-components-qrcode.js"></script>
+		<script>
+			(function() {
+				let data_input_element = document.getElementById('data_input');
+				let scale_input_element = document.getElementById('scale_input');
+				let qrcode_element = document.getElementById('qr_code');
+				let update_qrcode = function() {
+					qrcode_element.setAttribute('data', data_input_element.value);
+					qrcode_element.setAttribute('scale', scale_input_element.value);
+				}
+				data_input_element.oninput = update_qrcode;
+				scale_input_element.oninput = update_qrcode;
+				update_qrcode();
+			})(this);
+		</script>
+	</body>
+</html>

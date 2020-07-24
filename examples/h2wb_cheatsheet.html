@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>H2WB 2D Barcode Scanner Configuration</title>
+		<style>
+			tbody>tr>:nth-child(1) {
+			}
+			tbody>tr>:nth-child(2) {
+				text-align: center;
+			}
+			tbody>tr>:nth-child(3) {
+				font-family: monospace, monospace;
+			}
+			tbody>tr>:nth-child(4) {
+				font-style: italic;
+			}
+			@media print {
+				.dont-print {
+					display: none !important;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h2>H2WB 2D Barcode Scanner Configuration</h4>
+
+		<table>
+			<tr>
+				<th>Command</th>
+				<th>Barcode</th>
+				<th>Code</th>
+				<th>Remarks</th>
+			</tr>
+
+			<tbody>
+				<tr>
+					<th colspan="4"><h3>Step 1: Enter configuration mode</h3></th>
+				</tr>
+				<tr>
+					<td>Enter configuration mode</td>
+					<td><code-128b data="%%EnterSet"></code-128b></td>
+					<td>%%EnterSet</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<th colspan="4"><h3>Step 2: Configure</h3></th>
+				</tr>
+
+				<tr>
+					<th colspan="4"><em>(Communication mode)</em></th>
+				</tr>
+				<tr>
+					<td>Set 2.4G mode</td>
+					<td><code-128b data="%%SpecCodeA8"></code-128b></td>
+					<td>%%SpecCodeA8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Set Bluetooth HID mode</td>
+					<td><code-128b data="%%SpecCodeAA"></code-128b></td>
+					<td>%%SpecCodeAA</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Set Bluetooth SPP mode</td>
+					<td><code-128b data="%%SpecCodeAB"></code-128b></td>
+					<td>%%SpecCodeAB</td>
+					<td>Untested, might not be supported by this scanner model</td>
+				</tr>
+				<tr>
+					<td>Set Bluetooth BLE mode</td>
+					<td><code-128b data="%%SpecCodeAC"></code-128b></td>
+					<td>%%SpecCodeAC</td>
+					<td>Untested, might not be supported by this scanner model</td>
+				</tr>
+				<tr>
+					<td>Pair</td>
+					<td><code-128b data="%%SpecCode99"></code-128b></td>
+					<td>%%SpecCode99</td>
+					<td>Execute this after setting the desired communication mode</td>
+				</tr>
+
+				<tr>
+					<th colspan="4"><em>(Suffix)</em></th>
+				</tr>
+				<tr>
+					<td>Set suffix: CR</td>
+					<td><code-128b data="%%SpecCode9C"></code-128b></td>
+					<td>%%SpecCode9C</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Set suffix: LF</td>
+					<td><code-128b data="%%SpecCode9D"></code-128b></td>
+					<td>%%SpecCode9D</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Set suffix: CR+LF</td>
+					<td><code-128b data="%%SpecCode9E"></code-128b></td>
+					<td>%%SpecCode9E</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Set suffix: None</td>
+					<td><code-128b data="%%SpecCode9F"></code-128b></td>
+					<td>%%SpecCode9F</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<th colspan="4"><em>(Keyboard layout)</em></th>
+				</tr>
+				<tr>
+					<td>Set English keyboard layout</td>
+					<td><code-128b data="%%SpecCode40"></code-128b></td>
+					<td>%%SpecCode40</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Set German keyboard layout</td>
+					<td><code-128b data="%%SpecCode41"></code-128b></td>
+					<td>%%SpecCode41</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Set French keyboard layout</td>
+					<td><code-128b data="%%SpecCode42"></code-128b></td>
+					<td>%%SpecCode42</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Set Spanish keyboard layout</td>
+					<td><code-128b data="%%SpecCode43"></code-128b></td>
+					<td>%%SpecCode43</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Set Italian keyboard layout</td>
+					<td><code-128b data="%%SpecCode44"></code-128b></td>
+					<td>%%SpecCode44</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Set Japanese keyboard layout</td>
+					<td><code-128b data="%%SpecCode45"></code-128b></td>
+					<td>%%SpecCode45</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<th colspan="4"><em>(Tone / Volume)</em></th>
+				</tr>
+				<tr>
+					<td>Set volume off</td>
+					<td><code-128b data="%%SpecCode94"></code-128b></td>
+					<td>%%SpecCode94</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Set low volume</td>
+					<td><code-128b data="%%SpecCode95"></code-128b></td>
+					<td>%%SpecCode95</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Set medium volume</td>
+					<td><code-128b data="%%SpecCode96"></code-128b></td>
+					<td>%%SpecCode96</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Set high volume</td>
+					<td><code-128b data="%%SpecCode97"></code-128b></td>
+					<td>%%SpecCode97</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<th colspan="4"><em>(Sleep)</em></th>
+				</tr>
+				<tr>
+					<td>Sleep after 30 seconds</td>
+					<td><code-128b data="%%SpecCode30"></code-128b></td>
+					<td>%%SpecCode30</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Sleep after 1 minute</td>
+					<td><code-128b data="%%SpecCode31"></code-128b></td>
+					<td>%%SpecCode31</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Sleep after 2 minutes</td>
+					<td><code-128b data="%%SpecCode32"></code-128b></td>
+					<td>%%SpecCode32</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Sleep after 5 minutes</td>
+					<td><code-128b data="%%SpecCode33"></code-128b></td>
+					<td>%%SpecCode33</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Sleep after 10 minutes</td>
+					<td><code-128b data="%%SpecCode34"></code-128b></td>
+					<td>%%SpecCode34</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Sleep after 30 minutes</td>
+					<td><code-128b data="%%SpecCode35"></code-128b></td>
+					<td>%%SpecCode35</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Sleep never</td>
+					<td><code-128b data="%%SpecCode36"></code-128b></td>
+					<td>%%SpecCode36</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Sleep now</td>
+					<td><code-128b data="%%SpecCode38"></code-128b></td>
+					<td>%%SpecCode38</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<th colspan="4"><em>(Normal/Storage mode)</em></th>
+				</tr>
+				<tr>
+					<td>Set normal mode</td>
+					<td><code-128b data="%%SpecCode10"></code-128b></td>
+					<td>%%SpecCode10</td>
+					<td>Barcodes will be transmitted immediately</td>
+				</tr>
+				<tr>
+					<td>Set storage mode</td>
+					<td><code-128b data="%%SpecCode11"></code-128b></td>
+					<td>%%SpecCode11</td>
+					<td>Barcodes will be stored in the scanner's memory</td>
+				</tr>
+				<tr>
+					<td>Upload stored barcodes</td>
+					<td><code-128b data="%%SpecCode16"></code-128b></td>
+					<td>%%SpecCode16</td>
+					<td>For storage mode</td>
+				</tr>
+				<tr>
+					<td>Show number of stored barcodes</td>
+					<td><code-128b data="%%SpecCode17"></code-128b></td>
+					<td>%%SpecCode17</td>
+					<td>For storage mode</td>
+				</tr>
+				<tr>
+					<td>Delete stored barcodes</td>
+					<td><code-128b data="%%SpecCode18"></code-128b></td>
+					<td>%%SpecCode18</td>
+					<td>For storage mode</td>
+				</tr>
+
+				<tr>
+					<th colspan="4"><em>(Misc)</em></th>
+				</tr>
+				<tr>
+					<td>Reset to factory defaults</td>
+					<td><code-128b data="%%SpecCode93"></code-128b></td>
+					<td>%%SpecCode93</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Show version information</td>
+					<td><code-128b data="%%SpecCode39"></code-128b></td>
+					<td>%%SpecCode39</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<th colspan="4"><h3>Step 3: Exit configuration mode</h3></th>
+				</tr>
+				<tr>
+					<td>Exit configuration mode</td>
+					<td><code-128b data="%%ExitSet"></code-128b></td>
+					<td>%%ExitSet</td>
+					<td></td>
+				</tr>
+
+			</tbody>
+		</table>
+
+		<p class="dont-print"><small><em>This page uses the <a href="https://github.com/oyooyo/barcode-components">barcode-components</a> web components for displaying barcodes.</em></small></p>
+
+		<script src="../barcode-components-code128b.js"></script>
+	</body>
+</html>
