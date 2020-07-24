@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Online QR-Code Creator</title>
+		<title>Online QR-Code Generator</title>
 		<style>
 			body {
 				background-color: #C0E0FF;
@@ -10,7 +10,7 @@
 		</style>
 	</head>
 	<body>
-		<h2>Online QR-Code Creator</h2>
+		<h2>Online QR-Code Generator</h2>
 
 		<p>Data: <input id="data_input" type="text" value="https://github.com/oyooyo/barcode-elements" size="100" /></p>
 		<p>Scale: <input id="scale_input" type="number" value="4" /></p>
@@ -19,7 +19,7 @@
 
 		<p><small><em>This page uses the <a href="https://github.com/oyooyo/barcode-components">barcode-components</a> web components for displaying barcodes.</em></small></p>
 
-		<script src="../barcode-components-qrcode.js"></script>
+		<script src="https://oyooyo.github.io/barcode-components/barcode-components-qrcode.min.js"></script>
 		<script>
 			(function() {
 				let data_input_element = document.getElementById('data_input');
