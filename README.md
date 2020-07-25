@@ -62,7 +62,7 @@ or
 
 or
 
-`<ean-8 data="<Data to encode in barcode, 7 or 8>" scale="<Scale factor>"></ean-8>` _(for EAN-8)_
+`<ean-8 data="<Data to encode in barcode, 7 or 8 digits>" scale="<Scale factor>"></ean-8>` _(for EAN-8)_
 
 ...in your HTML/DOM wherever you want to show a barcode.
 
