@@ -307,3 +307,4 @@ function define_barcode_element(element_name, Barcode_Class) {
 
 define_barcode_element('code-128b', Code_128b);
 }).call(this);
+

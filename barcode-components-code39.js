@@ -1,3 +1,4 @@
+(function() {
 class Barcode {
 	// Concrete subclasses of Barcode must implement the static data_to_row_patterns() function
 	// Returns an array of strings consisting only of '0' and '1' characters, with each string representing one line/row of the barcode
@@ -266,4 +267,5 @@ function define_barcode_element(element_name, Barcode_Class) {
 }
 
 define_barcode_element('code-39', Code_39);
+}).call(this);
 

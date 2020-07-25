@@ -1464,3 +1464,4 @@ function define_barcode_element(element_name, Barcode_Class) {
 
 define_barcode_element('qr-code', QR_Code);
 }).call(this);
+
