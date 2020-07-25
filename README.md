@@ -13,6 +13,8 @@ The following barcode types are currently supported:
 - QR-Code
 - Code 128 _(Only code set B = Code 128B, the most commonly used code set that can encode all ASCII characters from 32 to 127)_
 - Code 39
+- EAN-13
+- EAN-8
 
 ## Usage
 
@@ -20,15 +22,23 @@ The following barcode types are currently supported:
 
 Add...
 
-`<script src="https://oyooyo.github.io/barcode-components/barcode-components-qrcode.min.js"></script>` _(for QR-Code)_
+`<script src="https://oyooyo.github.io/barcode-components/barcode-components.min.js"></script>` _(for all available barcode types)_
 
 or
 
-`<script src="https://oyooyo.github.io/barcode-components/barcode-components-code128b.min.js"></script>` _(for Code 128B)_
+`<script src="https://oyooyo.github.io/barcode-components/barcode-components-qrcode.min.js"></script>` _(for QR-Code only)_
 
 or
 
-`<script src="https://oyooyo.github.io/barcode-components/barcode-components-code39.min.js"></script>` _(for Code 39)_
+`<script src="https://oyooyo.github.io/barcode-components/barcode-components-code128b.min.js"></script>` _(for Code 128B only)_
+
+or
+
+`<script src="https://oyooyo.github.io/barcode-components/barcode-components-ean13.min.js"></script>` _(for EAN-13 only)_
+
+or
+
+`<script src="https://oyooyo.github.io/barcode-components/barcode-components-ean8.min.js"></script>` _(for EAN-8 only)_
 
 ...to the script section of your HTML/DOM.
 
@@ -45,6 +55,14 @@ or
 or
 
 `<code-39 data="<Data to encode in barcode>" scale="<Scale factor>"></code-39>` _(for Code-39)_
+
+or
+
+`<ean-13 data="<Data to encode in barcode, 12 or 13 digits>" scale="<Scale factor>"></ean-13>` _(for EAN-13)_
+
+or
+
+`<ean-8 data="<Data to encode in barcode, 7 or 8>" scale="<Scale factor>"></ean-8>` _(for EAN-8)_
 
 ...in your HTML/DOM wherever you want to show a barcode.
 
