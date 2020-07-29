@@ -32,23 +32,27 @@ The following barcode types are currently supported:
 
 Add...
 
-`<script src="https://oyooyo.github.io/barcode-components/barcode-components.min.js"></script>` _(for all available barcode types)_
+`<script src="https://oyooyo.github.io/barcode-components/barcode-components.min.js"></script>` _(for all available barcode types, ~24kB)_
 
 or
 
-`<script src="https://oyooyo.github.io/barcode-components/barcode-components-qrcode.min.js"></script>` _(for QR-Code only)_
+`<script src="https://oyooyo.github.io/barcode-components/barcode-components-qrcode.min.js"></script>` _(for QR-Code only, ~18kB)_
 
 or
 
-`<script src="https://oyooyo.github.io/barcode-components/barcode-components-code128b.min.js"></script>` _(for Code 128B only)_
+`<script src="https://oyooyo.github.io/barcode-components/barcode-components-code128b.min.js"></script>` _(for Code 128B only, ~7kB)_
 
 or
 
-`<script src="https://oyooyo.github.io/barcode-components/barcode-components-ean13.min.js"></script>` _(for EAN-13 only)_
+`<script src="https://oyooyo.github.io/barcode-components/barcode-components-code39.min.js"></script>` _(for Code 39 only, ~6kB)_
 
 or
 
-`<script src="https://oyooyo.github.io/barcode-components/barcode-components-ean8.min.js"></script>` _(for EAN-8 only)_
+`<script src="https://oyooyo.github.io/barcode-components/barcode-components-ean13.min.js"></script>` _(for EAN-13 only, ~6kB)_
+
+or
+
+`<script src="https://oyooyo.github.io/barcode-components/barcode-components-ean8.min.js"></script>` _(for EAN-8 only, ~6kB)_
 
 ...to the script section of your HTML/DOM.
 
@@ -60,11 +64,11 @@ Place...
 
 or
 
-`<code-128b data="<Data to encode in barcode>" scale="<Scale factor>"></code-128b>` _(for Code 128 Set B)_
+`<code-128b data="<Data to encode in barcode>" scale="<Scale factor>"></code-128b>` _(for Code 128B)_
 
 or
 
-`<code-39 data="<Data to encode in barcode>" scale="<Scale factor>"></code-39>` _(for Code-39)_
+`<code-39 data="<Data to encode in barcode>" scale="<Scale factor>"></code-39>` _(for Code 39)_
 
 or
 
