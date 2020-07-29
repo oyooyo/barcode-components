@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Example barcodes created by barcode-components</title>
+		<style>
+			table {
+				border-collapse: collapse;
+			}
+			td {
+				border: 1px solid #000000;
+			}
+			tbody>tr>:nth-child(1) {
+				padding: 0.5rem 0 0.5rem 0;
+			}
+			tbody>tr>:nth-child(2) {
+				font-family: monospace, monospace;
+			}
+			tbody>tr>:nth-child(3) {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Example barcodes created by <em><a href="https://github.com/oyooyo/barcode-components/">barcode-components</a></em></h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Desired barcode</th>
+					<th>HTML</th>
+					<th>Barcode</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Barcode type: QR-Code<br />Data: "Data"</td>
+					<td><xmp><qr-code data="Data"></qr-code></xmp></td>
+					<td><qr-code data="Data"></qr-code></td>
+				</tr>
+				<tr>
+					<td>Barcode type: QR-Code<br />Data: "Data"<br />Scale factor: 4</td>
+					<td><xmp><qr-code data="Data" scale="4"></qr-code></xmp></td>
+					<td><qr-code data="Data" scale="4"></qr-code></td>
+				</tr>
+				<tr>
+					<td>Barcode type: Code-128<br />Data: "Data"</td>
+					<td><xmp><code-128b data="Data"></code-128b></xmp></td>
+					<td><code-128b data="Data"></code-128b></td>
+				</tr>
+				<tr>
+					<td>Barcode type: Code-39<br />Data: "DATA"</td>
+					<td><xmp><code-39 data="DATA"></code-39></xmp></td>
+					<td><code-39 data="DATA"></code-39></td>
+				</tr>
+				<tr>
+					<td>Barcode type: EAN-13<br />Data: "123456789012"</td>
+					<td><xmp><ean-13 data="123456789012"></ean-13></xmp></td>
+					<td><ean-13 data="123456789012"></ean-13></td>
+				</tr>
+				<tr>
+					<td>Barcode type: EAN-8<br />Data: "1234567"</td>
+					<td><xmp><ean-8 data="1234567"></ean-8></xmp></td>
+					<td><ean-8 data="1234567"></ean-8></td>
+				</tr>
+			</tbody>
+		</table>
+		<script src="https://oyooyo.github.io/barcode-components/barcode-components.min.js"></script>
+	</body>
+</html>

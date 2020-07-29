@@ -147,6 +147,10 @@ class EAN_Like_Barcode extends Barcode_1D {
 };
 
 class EAN_8 extends EAN_Like_Barcode {
+	static get PRESCALE_RATIO_Y() {
+		return 0.825;
+	}
+
 	static data_to_pattern(data) {
 		let data_without_check_digit = data.slice(0, 7);
 		data = `${data_without_check_digit}${this.compute_check_digit(data_without_check_digit)}`;

@@ -405,6 +405,10 @@ class EAN_Like_Barcode extends Barcode_1D {
 };
 
 class EAN_13 extends EAN_Like_Barcode {
+	static get PRESCALE_RATIO_Y() {
+		return 0.73;
+	}
+
 	static data_to_pattern(data) {
 		let data_without_check_digit = data.slice(0, 12);
 		data = `${data_without_check_digit}${this.compute_check_digit(data_without_check_digit)}`;
@@ -414,6 +418,10 @@ class EAN_13 extends EAN_Like_Barcode {
 
 define_barcode_element('ean-13', EAN_13);
 class EAN_8 extends EAN_Like_Barcode {
+	static get PRESCALE_RATIO_Y() {
+		return 0.825;
+	}
+
 	static data_to_pattern(data) {
 		let data_without_check_digit = data.slice(0, 7);
 		data = `${data_without_check_digit}${this.compute_check_digit(data_without_check_digit)}`;
@@ -1671,7 +1679,7 @@ var qrcode = function() {
 function create_qrcode(data, error_correction_level, type) {
 	error_correction_level = value_with_default(error_correction_level, 'L');
 	type = value_with_default(type, 0);
-	for (mode of ['Numeric', 'Alphanumeric', 'Byte', 'Kanji']) {
+	for (let mode of ['Numeric', 'Alphanumeric', 'Byte', 'Kanji']) {
 		try {
 			let qr = qrcode(type, error_correction_level);
 			qr.addData(data, mode);

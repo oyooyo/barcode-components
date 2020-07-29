@@ -6,6 +6,16 @@ A set of [Web Components](https://en.wikipedia.org/wiki/Web_Components) for easi
 ```
 in the HTML/DOM.
 
+## Usage examples
+
+![Usage examples of barcode-components](https://oyooyo.github.io/barcode-components/examples/example_barcodes.png)
+
+More usage examples (look at HTML code):
+
+- [Online QR-Code Generator](https://oyooyo.github.io/barcode-components/examples/qrcode_generator.html)
+- [CheatSheet for configuring the H2WB 2D Barcode Scanner](https://oyooyo.github.io/barcode-components/examples/h2wb_cheatsheet.html)
+- [Example barcodes](https://oyooyo.github.io/barcode-components/examples/example_barcodes.html)
+
 ## Supported barcode types
 
 The following barcode types are currently supported:
@@ -67,11 +77,6 @@ or
 ...in your HTML/DOM wherever you want to show a barcode.
 
 **Be sure to always add the closing tag** - self-closing tags _(for example `<qr-code />`)_ are not possible.
-
-## Usage examples
-
-- [Online QR-Code Generator](https://oyooyo.github.io/barcode-components/examples/qrcode_generator.html)
-- [CheatSheet for configuring the H2WB 2D Barcode Scanner](https://oyooyo.github.io/barcode-components/examples/h2wb_cheatsheet.html)
 
 ## Advanced topics
 

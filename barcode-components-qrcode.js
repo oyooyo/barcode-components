@@ -1293,7 +1293,7 @@ function value_with_default(...values) {
 function create_qrcode(data, error_correction_level, type) {
 	error_correction_level = value_with_default(error_correction_level, 'L');
 	type = value_with_default(type, 0);
-	for (mode of ['Numeric', 'Alphanumeric', 'Byte', 'Kanji']) {
+	for (let mode of ['Numeric', 'Alphanumeric', 'Byte', 'Kanji']) {
 		try {
 			let qr = qrcode(type, error_correction_level);
 			qr.addData(data, mode);
